@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Self-Publishing Studio — Waitlist</title>
-  <meta name="description" content="Want to write a non-fiction book that pays you for the next 10 years? A 2-week live program to help you write, publish, and market a non-fiction book that builds your business. Join the waitlist." />
-  <meta property="og:title" content="Self-Publishing Studio — Waitlist" />
-  <meta property="og:description" content="A 2-week live program to help you write, publish, and market a non-fiction book that builds your business. Enrollment opens May 25th." />
+  <title>LinkedIn AI LIVE — Waitlist</title>
+  <meta name="description" content="We've built an audience of 250,000+ followers and generated 10,000+ organic leads from LinkedIn. LinkedIn AI LIVE is a 2-week live bootcamp to help you become an authority, generate leads, and open new career doors. Join the waitlist." />
+  <meta property="og:title" content="LinkedIn AI LIVE — Waitlist" />
+  <meta property="og:description" content="A 2-week live bootcamp to position yourself as an authority, generate leads, and open doors to new opportunities. Launching Monday, June 29th." />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="assets/bookshelf-mark.svg" />
+  <link rel="icon" href="assets/liai-mark.svg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,32 +18,32 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* Ink — navy / dark surfaces */
-      --ink-950: #08111F;
-      --ink-900: #0C1929;
-      --ink-800: #142539;
-      --ink-700: #1E3550;
-      --ink-600: #2A4566;
-      --ink-500: #3E5C82;
-      --ink-400: #5A78A0;
-      --ink-300: #8AA0C0;
-      --ink-200: #B5C4D9;
-      --ink-100: #DDE5F0;
+      /* Ink — LinkedIn AI dark blue surfaces (#0A1B47 base) */
+      --ink-950: #050E26;
+      --ink-900: #0A1B47;
+      --ink-800: #0F2356;
+      --ink-700: #455885;   /* brand blue — borders */
+      --ink-600: #3A4D78;
+      --ink-500: #455885;   /* brand blue */
+      --ink-400: #6B7DA8;
+      --ink-300: #8C9CC3;
+      --ink-200: #B7C4DE;
+      --ink-100: #DCE4F1;
 
-      /* Butter — primary brand yellow */
-      --butter-700: #B8A648;
-      --butter-600: #D8C25A;
-      --butter-500: #EFE183;
-      --butter-400: #F4E89A;
-      --butter-300: #F8F0B8;
+      /* Butter slot — repurposed as the light-blue brand accent (#4FA4E5) */
+      --butter-700: #2F7CBE;
+      --butter-600: #3D8FD3;
+      --butter-500: #4FA4E5;
+      --butter-400: #74B8EC;
+      --butter-300: #A6D4F5;
 
-      /* Paper — warm off-white */
-      --paper-100: #FBF7EC;
-      --paper-200: #F5EEDA;
-      --paper-300: #ECE2C2;
+      /* Paper — white / near-white text */
+      --paper-100: #FFFFFF;
+      --paper-200: #EEF2FA;
+      --paper-300: #DCE4F1;
 
-      /* Accent */
-      --rust-500: #B8633A;
+      /* Accent — error state */
+      --rust-500: #C5523E;
 
       /* Type stack */
       --font-display: "Anton", "Bebas Neue", "Impact", system-ui, sans-serif;
@@ -127,15 +127,6 @@
       background: var(--ink-900);
       display: flex;
       align-items: center;
-    }
-    .sps-hero-texture {
-      position: absolute; inset: 0;
-      background: url('assets/book-pattern.svg') center/600px repeat;
-      opacity: 0.4;
-      -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%);
-              mask-image: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%);
-      pointer-events: none;
-      z-index: 0;
     }
     .sps-hero-inner {
       position: relative; z-index: 1;
@@ -274,11 +265,10 @@
       max-width: 100%;
       width: 380px;
       height: auto;
-      filter: drop-shadow(20px 30px 40px rgba(0,0,0,0.6));
-      transform: rotate(-2deg);
+      filter: drop-shadow(20px 30px 40px rgba(0,0,0,0.55));
       transition: transform 280ms cubic-bezier(.16,.84,.36,1);
     }
-    .sps-product img:hover { transform: rotate(0deg) scale(1.02); }
+    .sps-product img:hover { transform: scale(1.02); }
 
     /* Mobile-only inline product render, sits between the two paragraphs */
     .sps-product-mobile { display: none; }
@@ -287,8 +277,7 @@
       margin: 0 auto;
       width: clamp(100px, 16vh, 150px);
       height: auto;
-      transform: rotate(-2deg);
-      filter: drop-shadow(0 12px 18px rgba(0,0,0,0.35));
+      filter: drop-shadow(0 12px 18px rgba(0,0,0,0.4));
     }
 
     /* ─── KIT FORM OVERRIDES — restyles ConvertKit's injected DOM ─── */
@@ -555,38 +544,37 @@
     <!-- ═══════════════ NAV ═══════════════ -->
     <header class="sps-nav">
       <div class="sps-nav-inner">
-        <a href="#" class="sps-brand" aria-label="Self-Publishing Studio">
-          <img src="assets/bookshelf-mark.svg" alt="" class="sps-brand-mark" width="34" height="34" />
-          <span class="sps-brand-word">Self-Publishing Studio</span>
+        <a href="#" class="sps-brand" aria-label="LinkedIn AI LIVE">
+          <img src="assets/liai-mark.svg" alt="" class="sps-brand-mark" width="34" height="34" />
+          <span class="sps-brand-word">LinkedIn AI LIVE</span>
         </a>
         <div class="sps-nav-status">
           <span class="sps-pulse" aria-hidden="true"></span>
-          <span>Enrollment Opens May 25th</span>
+          <span>Launches Monday, June 29th</span>
         </div>
       </div>
     </header>
 
     <!-- ═══════════════ HERO ═══════════════ -->
     <main class="sps-hero">
-      <div class="sps-hero-texture" aria-hidden="true"></div>
 
       <div class="sps-hero-inner">
 
         <section class="sps-hero-text">
           <h1 class="sps-display">
-            Want to <span class="pop">write a non-fiction book</span> that pays you for the next 10 years?
+            LinkedIn AI <span class="pop">LIVE</span>
           </h1>
 
           <p class="sps-lede">
-            I&rsquo;ve sold <strong>tens of thousands of books</strong> worldwide and generated <strong>$500K+ in royalties</strong> writing non-fiction&mdash;now I want to help you do the same.
+            We&rsquo;ve built an audience of <strong>250,000+ followers</strong> and generated <strong>10,000+ organic leads</strong> from LinkedIn&mdash;now, we want to give you our playbook.
           </p>
 
           <aside class="sps-product-mobile" aria-hidden="true">
-            <img src="assets/product-render.png" alt="" />
+            <img src="assets/liai-product-box.png" alt="" />
           </aside>
 
           <p class="sps-sublede">
-            And on <strong>Monday, June 1st</strong>, we&rsquo;re launching <strong>Self-Publishing Studio</strong>: a 2-week live program to help you write, publish, and market a non-fiction book that builds your business.
+            On <strong>Monday, June 29th</strong>, we&rsquo;re launching <strong>LinkedIn AI LIVE</strong>: a 2-week live bootcamp to help you position yourself as an authority in your niche, generate leads for your business, and open doors to new career opportunities.
           </p>
 
           <!-- ── Kit (ConvertKit) Form ── -->
@@ -599,7 +587,7 @@
 
           <!-- ── Countdown to enrollment open ── -->
           <div class="sps-cd" role="timer" aria-live="off">
-            <div class="sps-cd-label">— Enrollment Opens In —</div>
+            <div class="sps-cd-label">— Launching In —</div>
             <div class="sps-cd-grid">
               <div class="sps-cd-unit">
                 <div class="sps-cd-num" id="cd-days">00</div>
@@ -626,7 +614,7 @@
 
         <!-- ── Right column: product render ── -->
         <aside class="sps-product" aria-hidden="true">
-          <img src="assets/product-render.png" alt="Self-Publishing Studio course box" width="380" />
+          <img src="assets/liai-product-box.png" alt="LinkedIn AI LIVE course box" width="380" />
         </aside>
 
       </div>
@@ -636,8 +624,8 @@
 
   <!-- ═══════════════════════════ COUNTDOWN JS ═══════════════════════════ -->
   <script>
-    // End of day May 25 → midnight May 26 ET (EDT = UTC-4)
-    const TARGET = new Date('2026-05-26T04:00:00Z');
+    // Launch: Monday, June 29th → midnight ET (EDT = UTC-4)
+    const TARGET = new Date('2026-06-29T04:00:00Z');
 
     function tick() {
       const diff = Math.max(0, TARGET - Date.now());
