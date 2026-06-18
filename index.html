@@ -139,6 +139,19 @@
       align-items: center;
     }
 
+    /* ─── PREHEAD / KICKER ─── */
+    .sps-kicker {
+      font-family: var(--font-sans);
+      font-weight: 800;
+      font-size: clamp(13px, 1.15vw, 17px);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--paper-100);
+      line-height: 1.1;
+      margin: 0 0 clamp(10px, 1.6vh, 16px);
+    }
+    .sps-kicker .pop { color: var(--butter-500); }
+
     /* ─── DISPLAY HEADLINE ─── */
     .sps-display {
       font-family: var(--font-display);
@@ -421,6 +434,7 @@
         max-width: clamp(360px, 70vw, 500px);
         margin: 0 auto;
       }
+      .sps-kicker,
       .sps-display,
       .sps-lede,
       .sps-sublede,
@@ -459,6 +473,10 @@
         gap: clamp(8px, 1.4vh, 14px);
       }
       .sps-hero-text { max-width: 360px; }
+      .sps-kicker {
+        font-size: clamp(11px, 3vw, 13px);
+        margin-bottom: 8px;
+      }
       .sps-display {
         font-size: clamp(20px, 5.6vw, 28px);
         line-height: 1;
@@ -561,13 +579,11 @@
       <div class="sps-hero-inner">
 
         <section class="sps-hero-text">
-          <h1 class="sps-display">
-            LinkedIn AI <span class="pop">LIVE</span>
-          </h1>
+          <p class="sps-kicker">LinkedIn AI <span class="pop">LIVE</span></p>
 
-          <p class="sps-lede">
-            We&rsquo;ve built an audience of <strong>250,000+ followers</strong> and generated <strong>10,000+ organic leads</strong> from LinkedIn&mdash;now, we want to give you our playbook.
-          </p>
+          <h1 class="sps-display">
+            We&rsquo;ve built an audience of <span class="pop">250,000+ followers</span> and generated <span class="pop">10,000+ organic leads</span> from LinkedIn&mdash;now, we want to give you our playbook.
+          </h1>
 
           <aside class="sps-product-mobile" aria-hidden="true">
             <img src="assets/liai-product-box.png" alt="" />
